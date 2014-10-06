@@ -1,0 +1,15 @@
+{% extends "TdevCoreBundle::layout.html.twig" %}
+{% block menu %}
+    <ul>
+        <li><a href="{{ path('tdev_core_homepage') }}">Home</a></li>
+        <li><a href="{{ path('tdev_news_homepage') }}">News</a></li>
+    </ul>
+{% endblock %}
+{% block body %}
+    <h1>Welcome!</h1>
+    <p>Bienvenue sur ma homepage.</p>
+    {% for new in news %}
+        <h2>news n°{{ loop.index }}</h2>
+        <p>{{ new }}</p>
+    {% endfor %}
+{% endblock %}

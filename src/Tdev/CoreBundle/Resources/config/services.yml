@@ -1,0 +1,7 @@
+parameters:
+#    tdev_core.example.class: Tdev\CoreBundle\Example
+
+services:
+#    tdev_core.example:
+#        class: %tdev_core.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

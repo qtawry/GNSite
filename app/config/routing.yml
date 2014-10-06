@@ -1,5 +1,11 @@
+tdev_contact:
+    resource: "@TdevContactBundle/Resources/config/routing.yml"
+    prefix:   /contact/
+
 tdev_news:
     resource: "@TdevNewsBundle/Resources/config/routing.yml"
     prefix:   /news/
 
-
+tdev_core:
+    resource: "@TdevCoreBundle/Resources/config/routing.yml"
+    prefix:   /

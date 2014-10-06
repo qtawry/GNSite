@@ -11,7 +11,9 @@ class NewsController extends Controller
     {
         if($page<1)
             throw new NotFoundHttpException('Les pages commencent à 1');
-        return $this->render('TdevNewsBundle:News:index.html.twig');
+
+        $news = array('Une news de test', 'Ca fait bizare de pas avoir de db', 'Et en plus c\'est pas très utile..', 'Mais on fait avec..','Pas le choix');
+        return $this->render('TdevNewsBundle:News:index.html.twig', array('news'=>$news));
     }
     public function viewAction($id)
     {

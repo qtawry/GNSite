@@ -3,10 +3,8 @@
 {% block body %}
     <h1>News</h1>
 
-    <ul>
-        <li><a href="{{ path('tdev_news_view',{'id': 1}) }}">News n°1</a></li>
-        <li><a href="{{ path('tdev_news_view',{'id': 2}) }}">News n°2</a></li>
-        <li><a href="{{ path('tdev_news_view',{'id': 3}) }}">News n°3</a></li>
-        <li><a href="{{ path('tdev_news_view',{'id': 4}) }}">News n°4</a></li>
-    </ul>
+    {% for new in news %}
+        <h2><a href="{{ path('tdev_news_view', {'id':loop.index}) }}">news n°{{ loop.index }}</a></h2>
+        <p>{{ new }}</p>
+    {% endfor %}
 {% endblock %}
