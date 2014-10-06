@@ -9,7 +9,7 @@
     <h1>Welcome!</h1>
     <p>Bienvenue sur ma homepage.</p>
     {% for new in news %}
-        <h2>news n°{{ loop.index }}</h2>
+        <h2><a href="{{ path('tdev_news_view', {'id':loop.index}) }}">News n°{{ loop.index }}</a></h2>
         <p>{{ new }}</p>
     {% endfor %}
 {% endblock %}
