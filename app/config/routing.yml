@@ -1,0 +1,5 @@
+tdev_news:
+    resource: "@TdevNewsBundle/Resources/config/routing.yml"
+    prefix:   /news/
+
+

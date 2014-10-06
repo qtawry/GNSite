@@ -1,0 +1,10 @@
+{% extends "TdevNewsBundle::layout.html.twig" %}
+
+{% block body %}
+    <h1>News n°{{ id }}</h1>
+
+    <div>
+        <a href="{{ path('tdev_news_edit',{'id': id}) }}" class="btn-sm btn btn-primary">Edit</a>
+        <a href="{{ path('tdev_news_delete',{'id': id}) }}" class="btn btn-sm btn-danger">Delete</a>
+    </div>
+{% endblock %}

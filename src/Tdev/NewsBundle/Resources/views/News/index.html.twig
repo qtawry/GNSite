@@ -1,0 +1,12 @@
+{% extends "TdevNewsBundle::layout.html.twig" %}
+
+{% block body %}
+    <h1>News</h1>
+
+    <ul>
+        <li><a href="{{ path('tdev_news_view',{'id': 1}) }}">News n°1</a></li>
+        <li><a href="{{ path('tdev_news_view',{'id': 2}) }}">News n°2</a></li>
+        <li><a href="{{ path('tdev_news_view',{'id': 3}) }}">News n°3</a></li>
+        <li><a href="{{ path('tdev_news_view',{'id': 4}) }}">News n°4</a></li>
+    </ul>
+{% endblock %}

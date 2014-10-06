@@ -1,0 +1,8 @@
+{% extends "::layout.html.twig" %}
+{% block menu %}
+    {{ parent() }}
+    <ul>
+        <li><a href="{{ path('tdev_news_homepage') }}">Show news</a></li>
+        <li><a href="{{ path('tdev_news_add') }}">Add a news</a></li>
+    </ul>
+{% endblock %}
